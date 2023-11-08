@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+:root {
+    --green: #1FAB89;
+    --white: #FFFFFF;
+    --light-gray: #D3D3D3;
+    --red: #FF2E63;
+    --yellow: #FFD369;
+    --dark-gray: #6C6C6C;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Poppins', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.button {
+    height: 35px;
+    min-width: 80px;
+    background: var(--white);
+    border: 1px solid black;
+    border-radius: 3px;
+    margin: 0 2px;
+    font-family: 'Poppins', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.button--primary-solid {
+    border: 2px solid var(--dark-gray);
+    color: var(--white);
+    background-color: var(--dark-gray);
+}
+
+.button--primary {
+    border: 2px solid var(--dark-gray);
+    color: var(--dark-gray);
+}
+
+.button--secondary {
+    border: 2px solid var(--dark-gray);
+    color: var(--dark-gray);
+}
+
+.button--warning {
+    border: 2px solid var(--yellow);
+    color: var(--yellow);
+}
+
+.button--danger {
+    border: 2px solid var(--red);
+    color: var(--red);
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--white);
+    height: 80px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    
+    background-color: var(--dark-gray);
+}
+
+.header .header__title {
+    font-weight: 500;
+    color: var(--white);
+}
+
+.input {
+    margin: 8px 0;
+}
+
+.input .input__label {
+    display: block;
+    line-height: 27px;
+    font-weight: 500;
+    color: var(--dark-gray);
+    font-size: 18px;
+}
+
+.input .input__item {
+    font-family: 'Poppins';
+    width: 100%;
+    font-size: 16px;
+    padding: 0 8px;
+    height: 35px;
+}
+
+.input .input__submit {
+    font-family: 'Poppins';
+    height: 35px;
+    margin-top: 24px;
+    width: 100%;
+    border-radius: 3px;
+    background: var(--dark-gray);
+    border: 0px;
+    color: var(--white);
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.item--space {
+    margin-right: 8px;
+}
+
+.line {
+    background-color: var(--light-gray);
+    height: 1px;
+}
+
+.label--dark-gray {
+    font-size: 16px;
+    color: var(--dark-gray);
+}
+
+.modal {
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgb(0, 0, 0);
+}
+
+.open {
+    display: block;
+}
+
+.close {
+    display: none;
+}
+
+.modal__body {
+    background-color: #fefefe;
+    max-width: 800px;
+    padding: 20px;
+    margin: 10% auto;
+    border: 1px solid #888;
+    border-radius: 5px;
+
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    margin: 24px auto 0;
+    max-width: 800px;
+}
+
+.wrapper__content {
+    padding: 24px 24px;
+}
+
+.wrapper__article {
+    display: flex;
+    border: 1px solid var(--dark-gray);
+    justify-content: space-between;
+    border-radius: 5px;
+    align-items: center;
+    padding: 16px 16px;
+    margin: 12px 0;
+}
+
+.wrapper__article h1 {
+    color: var(--dark-gray);
+    font-weight: 500;
+}
+
+.wrapper__article p {
+    font-weight: 400;
+}
+
+.wrapper .container {
+    margin-top: 24px;
+    background: #FFFFFF;
+    background: var(--white);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    min-height: 100px;
+    border-radius: 3px;
+}
+
+.container__title {
+    border-bottom: 2px solid var(--light-gray);
+    justify-content: space-between;
+    display: flex;
+    padding: 24px 24px;
+    align-items: center;
+}
+
+.container__title h1 {
+    color: var(--dark-gray);
+    font-weight: 500;
+}
+
+.container__search {
+    display: flex;
+}
+
+.title__close {
+    width: 28px;
+    height: 28px;
+}
+
+.title__close--pointer {
+    cursor: pointer;
+}
